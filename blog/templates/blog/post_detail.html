@@ -2,6 +2,7 @@
 
 {% block content %}
 	<div class="post">
+		<a class="btn btn-default" href="{% url 'post_edit' pk=v_html.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <h1>{{ v_html.title }}</h1>
         <p>{{ v_html.text|linebreaksbr }}</p>
 		{% if v_html.published_date %}
